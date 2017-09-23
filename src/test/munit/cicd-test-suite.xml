@@ -10,6 +10,6 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
     <munit:test name="cicd-test-suite-cicdFlowTest" description="Test">
         <munit:set payload="#[]" doc:name="Set Message"/>
         <flow-ref name="cicdFlow" doc:name="cicdFlow"/>
-        <munit:assert-on-equals message="Oops Failure" expectedValue="IMMANU" actualValue="#[payload]" doc:name="Assert Equals"/>
+        <munit:assert-on-equals message="Oops Failure" expectedValue="MINU" actualValue="#[payload]" doc:name="Assert Equals"/>
     </munit:test>
 </mule>
